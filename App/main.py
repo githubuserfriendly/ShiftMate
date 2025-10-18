@@ -9,6 +9,8 @@ from werkzeug.datastructures import  FileStorage
 from App.database import init_db
 from App.config import load_config
 
+from App.views import views, setup_admin
+
 from App.api import api   # <-- import your new API blueprint
 
 
@@ -16,8 +18,6 @@ from App.controllers import (
     setup_jwt,
     add_auth_context
 )
-
-from App.views import views, setup_admin
 
 
 
