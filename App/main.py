@@ -25,6 +25,8 @@ def add_views(app):
     for view in views:
         app.register_blueprint(view)
 
+#created twice, removing duplicate
+"""
 def create_app(overrides={}):
     app = Flask(__name__, static_url_path='/static')
     load_config(app, overrides)
@@ -42,6 +44,7 @@ def create_app(overrides={}):
         return render_template('401.html', error=error), 401
     app.app_context().push()
     return app
+"""
 
 def create_app(overrides={}):
     app = Flask(__name__, static_url_path='/static')
