@@ -1,3 +1,4 @@
+
 import os
 from flask import Flask, render_template
 from flask_uploads import DOCUMENTS, IMAGES, TEXT, UploadSet, configure_uploads
