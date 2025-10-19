@@ -43,3 +43,6 @@ def create_user_endpoint():
 @jwt_required()
 def static_user_page():
     return send_from_directory('static', 'static-user.html')
+
+
+
