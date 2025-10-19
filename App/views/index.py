@@ -10,20 +10,20 @@ def login_page():
 @index_views.route('/init', methods=['GET'])
 def init():
     initialize()
-    return redirect(url_for('login_page'))
+    return redirect(url_for('index_views.login_page'))
 
-@index_views.route("/index", methods=['GET'])
+@index_views.route('/index', methods=['GET'])
 def home_page():
-    return render_template("index.html")
+    return render_template('index.html')
 
-@index_views.route("/about", methods=['GET'])
+@index_views.route('/about', methods=['GET'])
 def about_page():
-    return render_template("about.html")
+    return render_template('about.html')
 
-@index_views.route("/contact", methods=['GET'])
+@index_views.route('/contact', methods=['GET'])
 def contact_page():
-    return render_template("contact.html")
+    return render_template('contact.html')
 
 @index_views.route('/health', methods=['GET'])
 def health_check():
-    return jsonify({'status':'healthy'})
+    return jsonify({'status': 'healthy'})
