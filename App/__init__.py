@@ -1,4 +1,3 @@
-from .models import *
 from .views import *
 from .controllers import *
 from .main import *
@@ -17,3 +16,4 @@ def create_app(config_object="App.config.Config"):
         from . import models  
 
     return app
+
